@@ -1,1 +1,47 @@
-<p>produto-consulta works!</p>
+<div>
+  <h5>Consulta de produtos</h5>
+  <p>Relação dos produtos cadastrados.</p>
+  <hr />
+
+
+  <div class="table-responsive">
+      <table class="table table-sm table-striped table-hover">
+          <thead>
+              <tr>
+                  <th>Data do Cadastro</th>
+                  <th>Valor</th>
+                  <th>Quantidade Min</th>
+                  <th>Descrição</th>
+                  <th>Operações</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td>
+                      <button class="btn btn-sm
+                                     btn-outline-danger me-2">
+                          Excluir
+                      </button>
+                      <button class="btn btn-sm btn-outline-primary"
+                          routerLink="/produto-edicao">
+                          Editar
+                      </button>
+                  </td>
+              </tr>
+          </tbody>
+          <tfoot>
+              <tr>
+                  <td colspan="5">
+                      Quantidade de produtos: 0
+                  </td>
+              </tr>
+          </tfoot>
+      </table>
+  </div>
+
+
+</div>
