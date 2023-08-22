@@ -1,1 +1,57 @@
-<h1>teste </h1>
+
+
+<div class="navbar-wrapper">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">Controle Web</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse text-center" id="navbarNav">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="gerenciarProdutosDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Gerenciar Produtos
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="gerenciarProdutosDropdown">
+              <li><a class="dropdown-item" routerLink="produto-cadastro">Cadastrar Produto</a></li>
+              <li><a class="dropdown-item" routerLink="produto-consulta">Consultar Produto</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="gerenciarMovimentacoesDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Gerenciar Movimentações
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="gerenciarMovimentacoesDropdown">
+              <li><a class="dropdown-item" routerLink="movimento-cadastro">Cadastrar Movimentação</a></li>
+              <li><a class="dropdown-item" routerLink="movimento-consulta">Consultar Movimentação</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+
+
+    <div class="card m-3">
+        <div class="card-body">
+            <!-- exibir o conteudo das demais páginas -->
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+
+
+</div>
+
+
+
+
+
+</div>
+
