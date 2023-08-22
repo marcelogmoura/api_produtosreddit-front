@@ -1,1 +1,49 @@
-<p>movimento-cadastro works!</p>
+<div>
+  <h5>Cadastro de movimentação</h5>
+  <p>Preencha os campos para incluir movimentação de um produto.</p>
+  <hr />
+
+  <form>
+
+      <div class="row mb-2">
+          <div class="col-md-4">
+              <label>Selecione o Produto:</label>
+              <select class="form-select">
+                  <option value="">Escolha uma opção</option>
+              </select>
+          </div>
+          <div class="col-md-2">
+              <label>Tipo:</label>
+              <select class="form-select">
+                  <option value="">Escolha uma opção</option>
+                  <option value="1">Entrada de Produtos</option>
+                  <option value="2">Saída de Produtos</option>
+              </select>
+          </div>
+          <div class="col-md-2">
+              <label>Quantidade:</label>
+              <input type="number" class="form-control" />
+          </div>
+          <div class="col-md-2">
+              <label>Data da Movimentação:</label>
+              <input type="date" class="form-control" />
+          </div>
+      </div>
+
+
+
+
+      <div class="row mb-2">
+          <div class="col-md-12">
+              <input type="submit" class="btn btn-success me-2"
+                     value="Cadastrar"/>
+              <a class="btn btn-light" routerLink="/movimento-
+                        consulta">Consultar</a>
+          </div>
+      </div>
+
+
+  </form>
+
+
+</div>
