@@ -1,1 +1,48 @@
-<p>produto-cadastro works!</p>
+<div>
+
+    <h5>Cadastro de produtos</h5>
+    <p>Preencha os campos abaixo.</p>
+    <hr />
+
+
+    <form>
+
+
+        <div class="row mb-2">
+            <div class="col-md-2">
+                <label>Data do Cadastro:</label>
+                <input type="date" class="form-control" />
+            </div>
+            <div class="col-md-2">
+                <label>Valor:</label>
+                <input type="text" class="form-control" />
+            </div>
+            <div class="col-md-2">
+                <label>Quantidade Mínima:</label>
+                <input type="number" class="form-control" />
+            </div>
+        </div>
+
+
+        <div class="row mb-2">
+            <div class="col-md-6">
+                <label>Descrição:</label>
+                <textarea class="form-control"></textarea>
+            </div>
+        </div>
+
+
+        <div class="row mb-2">
+            <div class="col-md-12">
+                <input type="submit" class="btn btn-success me-2"
+                       value="Cadastrar"/>
+                <a class="btn btn-light" routerLink="/produto-consulta">
+                  Ir para a consulta</a>
+            </div>
+        </div>
+
+
+    </form>
+
+
+</div>
